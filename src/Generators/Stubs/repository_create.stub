@@ -1,0 +1,35 @@
+<?php
+
+$NAMESPACE$
+
+use Herode\ARepo\BaseRepository;
+use Illuminate\Database\Eloquent\Builder;
+use $MODEL$;
+
+/**
+ * Class $CLASS$Repository.
+ *
+ * @package $NAMESPACE$
+ */
+class $CLASS$Repository extends BaseRepository
+{
+    /**
+     * Specify Model class name
+     *
+     * @return string
+     */
+    public function model()
+    {
+        return $CLASS$::class;
+    }
+
+    /**
+     * Specify Query Builder
+     *
+     * @return Builder
+     */
+    public function query()
+    {
+        return $CLASS$::query();
+    }
+}
